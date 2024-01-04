@@ -1,7 +1,29 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
-export const sidebarEn: SidebarConfig = {
-  '/guide/': [
+export const sidebarEn: SidebarConfig = [
+  {
+    text: 'Introduction',
+    link: '/en/main.md',
+  },
+  {
+    text: 'Bridge classes',
+    collapsible: true,
+    children: [
+      {
+        text: 'Bridge main',
+        link: '/en/bridge/main.md',
+      },
+      {
+        text: 'Bridge',
+        link: '/en/bridge/bridge.md',
+      },
+      {
+        text: 'BridgeContent',
+        link: '/en/bridge/bridgecontent.md',
+      }
+    ],
+  },
+  /*'/guide/': [
     {
       text: 'Guide',
       children: [
@@ -32,7 +54,7 @@ export const sidebarEn: SidebarConfig = {
     {
       text: 'Cookbook',
       children: [
-        '/advanced/cookbook/README.md',
+        '/advanced/cookbook/main.md',
         '/advanced/cookbook/usage-of-client-config.md',
         '/advanced/cookbook/adding-extra-pages.md',
         '/advanced/cookbook/making-a-theme-extendable.md',
@@ -122,5 +144,5 @@ export const sidebarEn: SidebarConfig = {
         },
       ],
     },
-  ],
-}
+  ],*/
+]

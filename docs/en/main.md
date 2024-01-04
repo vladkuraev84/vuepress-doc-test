@@ -14,6 +14,6 @@ Current project (NextFormJs/loader) is one of part **"NextFormJs"** and develope
 
 2) NextFormJs/player
 
-### Project requirements
+### Project requirements 1
 
 To run this project code locally you need [Node.js](https://nodejs.org/en/download) (v. ^18*) with package manager NPM, TypeScript.

@@ -11,8 +11,8 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { getDirname, path } from '@vuepress/utils'
 import {
   head,
-  navbarEn,
-  navbarRu,
+  // navbarEn,
+  // navbarRu,
   sidebarEn,
   sidebarRu,
 } from './configs/index.ts'
@@ -47,8 +47,8 @@ export default defineUserConfig({
   // configure default theme
   theme: defaultTheme({
     logo: '/images/hero.png',
-    repo: 'vuepress/docs',
-    docsDir: 'docs',
+    // repo: 'dddocs',
+    // docsDir: 'docs',
 
     // theme-level locales config
     locales: {
@@ -58,9 +58,11 @@ export default defineUserConfig({
        * As the default locale of @vuepress/theme-default is English,
        * we don't need to set all of the locale fields
        */
-      '/': {
+      '/en/': {
+        selectLanguageName: 'English',
+        selectLanguageText: 'English',
         // navbar
-        navbar: navbarEn,
+        // navbar: navbarEn,
         // sidebar
         sidebar: sidebarEn,
         // page meta
@@ -68,36 +70,36 @@ export default defineUserConfig({
       },
 
       /**
-       * Chinese locale config
+       * Russian locale config
        */
       '/ru/': {
         // navbar
-        navbar: navbarRu,
-        selectLanguageName: '简体中文',
-        selectLanguageText: '选择语言',
-        selectLanguageAriaLabel: '选择语言',
+        // navbar: navbarRu,
+        selectLanguageName: 'Русский',
+        selectLanguageText: 'Русский',
+        selectLanguageAriaLabel: 'Heccrbq',
         // sidebar
         sidebar: sidebarRu,
         // page meta
-        editLinkText: '在 GitHub 上编辑此页',
-        lastUpdatedText: '上次更新',
-        contributorsText: '贡献者',
+        editLinkText: 'Перейти на гитхаб',
+        lastUpdatedText: 'Последний текст',
+        contributorsText: 'Участники текста',
         // custom containers
-        tip: '提示',
-        warning: '注意',
-        danger: '警告',
+        tip: 'Совет',
+        warning: 'Внимание',
+        danger: 'Опасно',
         // 404 page
         notFound: [
-          '这里什么都没有',
-          '我们怎么到这来了？',
-          '这是一个 404 页面',
-          '看起来我们进入了错误的链接',
+          '1',
+          '2?',
+          '3',
+          '4',
         ],
-        backToHome: '返回首页',
+        backToHome: 'Вернуться назад',
         // a11y
-        openInNewWindow: '在新窗口打开',
-        toggleColorMode: '切换颜色模式',
-        toggleSidebar: '切换侧边栏',
+        openInNewWindow: 'Открыть в новом окне',
+        toggleColorMode: 'Переключить цвет темы',
+        toggleSidebar: 'Переключатель боковой панели',
       },
     },
 
