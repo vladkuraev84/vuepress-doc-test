@@ -1,3 +1,9 @@
-# Hello VuePress 1
-
-test text
+---
+home: true
+title: Welcome
+heroImage: /images/hero.png
+actions:
+  - text: Read the doc
+    link: /en/
+    type: primary
+---

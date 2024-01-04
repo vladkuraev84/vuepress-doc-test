@@ -3,11 +3,11 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 export const sidebarEn: SidebarConfig = [
   {
     text: 'Introduction',
-    link: '/en/main.md',
+    link: '/en/README.md',
   },
   {
     text: 'Bridge classes',
-    collapsible: true,
+    collapsible: false,
     children: [
       {
         text: 'Bridge main',
@@ -54,7 +54,7 @@ export const sidebarEn: SidebarConfig = [
     {
       text: 'Cookbook',
       children: [
-        '/advanced/cookbook/main.md',
+        '/advanced/cookbook/README.md',
         '/advanced/cookbook/usage-of-client-config.md',
         '/advanced/cookbook/adding-extra-pages.md',
         '/advanced/cookbook/making-a-theme-extendable.md',

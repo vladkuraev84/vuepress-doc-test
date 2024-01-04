@@ -3,7 +3,7 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 export const sidebarRu: SidebarConfig = [
   {
     text: 'Введение',
-    link: '/ru/main.md',
+    link: '/ru/README.md',
   },
   {
     text: 'Классы Bridge',
@@ -32,7 +32,7 @@ export const sidebarRu: SidebarConfig = {
       text: 'Bridge',
       collapsible: true,
       children: [
-        'main.md',
+        'README.md',
       ],
     },
   ],

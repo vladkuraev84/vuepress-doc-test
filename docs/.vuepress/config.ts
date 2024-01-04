@@ -22,10 +22,14 @@ import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 const __dirname = getDirname(import.meta.url)
 const require = createRequire(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
+const base = <"/" | `/${string}/`>process.env["BASE"] || "/";
+
 
 export default defineUserConfig({
   // set site base to default value
-  base: '/',
+  /*base: '/',*/
+
+  base,
 
   // extra tags in `<head>`
   head,
@@ -105,9 +109,9 @@ export default defineUserConfig({
 
     themePlugins: {
       // only enable git plugin in production mode
-      git: isProd,
+      // git: isProd,
       // use shiki plugin in production mode instead
-      prismjs: !isProd,
+      // prismjs: !isProd,
     },
   }),
 
