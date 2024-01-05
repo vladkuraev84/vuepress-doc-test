@@ -22,21 +22,20 @@ import {registerComponentsPlugin} from "@vuepress/plugin-register-components";
 const __dirname = getDirname(import.meta.url)
 const require = createRequire(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
-const base = <"/" | `/${string}/`>process.env["BASE"] || "/";
+// const base = <"/" | `/${string}/`>process.env["BASE"] || "/";
 
 
 export default defineUserConfig({
   // set site base to default value
-  /*base: '/',*/
+  base: '/',
 
-  base,
 
   // extra tags in `<head>`
   head,
 
   // site-level locales config
   locales: {
-    '/en/': {
+    '/': {
       lang: 'en-US',
       title: 'NextForm',
       description: 'Form constructor',
@@ -62,7 +61,7 @@ export default defineUserConfig({
        * As the default locale of @vuepress/theme-default is English,
        * we don't need to set all of the locale fields
        */
-      '/en/': {
+      '/': {
         selectLanguageName: 'English',
         selectLanguageText: 'English',
         // navbar
@@ -94,10 +93,10 @@ export default defineUserConfig({
         danger: 'Опасно',
         // 404 page
         notFound: [
-          '1',
-          '2?',
-          '3',
-          '4',
+          'notFound 1',
+          'notFound 2?',
+          'notFound 3',
+          'notFound 4',
         ],
         backToHome: 'Вернуться назад',
         // a11y
